@@ -51,7 +51,7 @@ getgenv().Aiming = {
     
     ShowFOV = false,
     FOV = 25,
-    FOVSides = 12,
+    FOVSides = 300,
     FOVColour = Color3fromRGB(255, 255, 255),
 
     VisibleCheck = true,
@@ -95,7 +95,7 @@ function Aiming.UpdateFOV()
 
     -- // Set Circle Properties
     circle.Visible = Aiming.ShowFOV
-    circle.Radius = (Aiming.FOV * 80)
+    circle.Radius = (Aiming.FOV * 3)
     circle.Position = Vector2new(Mouse.X, Mouse.Y + GetGuiInset(GuiService).Y)
     circle.NumSides = Aiming.FOVSides
     circle.Color = Aiming.FOVColour
