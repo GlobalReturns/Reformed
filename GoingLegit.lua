@@ -45,31 +45,31 @@ local GunSettings = {
 
     ["Double-Barrel SG"] = { --// dh
 
-        ["FOV"] = 14
+        ["FOV"] = 25
 
     },
 
     ["Double Barrel SG"] = { --// dhm
 
-        ["FOV"] = 14
+        ["FOV"] = 26.5
 
     },
 
     ["DoubleBarrel"] = { --// hood customs
 
-    ["FOV"] = 13
+    ["FOV"] = 20
 
     },
 
     ["Revolver"] = {
 
-        ["FOV"] = 12
+        ["FOV"] = 14.5
 
     },
 
     ["TacticalShotgun"] = {
         
-         ["FOV"] = 14
+         ["FOV"] = 12.9
         
     },
 
@@ -81,7 +81,7 @@ local GunSettings = {
 
     ["Shotgun"] = {
 
-        ["FOV"] = 13
+        ["FOV"] = 25
 
     }
 
@@ -245,57 +245,57 @@ game:GetService('RunService').Heartbeat:connect(function()
 local Average_Ping = Status.PerformanceStats.Ping:GetValue()
 local ping = math.round(Average_Ping)
 
-    if Getgenv().DaHoodSettings.AutoPrediction == true then
+    if getgenv().DaHoodSettings.AutoPrediction == true then
         if tonumber(ping) < 10 then
-            Getgenv().DaHoodSettings.Prediction = 0.0225
+            getgenv().DaHoodSettings.Prediction = 0.0225
         elseif tonumber(ping) < 20 then
-            Getgenv().DaHoodSettings.Prediction = 0.045
+            getgenv().DaHoodSettings.Prediction = 0.045
         elseif tonumber(ping) < 30 then
-            Getgenv().DaHoodSettings.Prediction = 0.0675
+            getgenv().DaHoodSettings.Prediction = 0.0675
         elseif tonumber(ping) < 40 then
-            Getgenv().DaHoodSettings.Prediction = 0.09
+            getgenv().DaHoodSettings.Prediction = 0.09
         elseif tonumber(ping) < 50 then
-            Getgenv().DaHoodSettings.Prediction = 0.1125
+            getgenv().DaHoodSettings.Prediction = 0.1125
         elseif tonumber(ping) < 60 then
-            Getgenv().DaHoodSettings.Prediction = 0.135
+            getgenv().DaHoodSettings.Prediction = 0.135
         elseif tonumber(ping) < 70 then
-            Getgenv().DaHoodSettings.Prediction = 0.1575
+            getgenv().DaHoodSettings.Prediction = 0.1575
         elseif tonumber(ping) < 80 then
-            Getgenv().DaHoodSettings.Prediction = 0.18
+            getgenv().DaHoodSettings.Prediction = 0.18
         elseif tonumber(ping) < 90 then
-            Getgenv().DaHoodSettings.Prediction = 0.2025
+            getgenv().DaHoodSettings.Prediction = 0.2025
         elseif tonumber(ping) < 100 then    
             Storage.AimlockSets.Prediction = 0.225
         elseif tonumber(ping) < 110 then
-            Getgenv().DaHoodSettings.Prediction = 0.2475
+            getgenv().DaHoodSettings.Prediction = 0.2475
         elseif tonumber(ping) < 120 then
             Storage.AimlockSets.Prediction = 0.27
         elseif tonumber(ping) < 130 then
-            Getgenv().DaHoodSettings.Prediction = 0.2925
+            getgenv().DaHoodSettings.Prediction = 0.2925
         elseif tonumber(ping) < 140 then
-            Getgenv().DaHoodSettings.Prediction = 0.315
+            getgenv().DaHoodSettings.Prediction = 0.315
         elseif tonumber(ping) < 150 then
-            Getgenv().DaHoodSettings.Prediction = 0.3375
+            getgenv().DaHoodSettings.Prediction = 0.3375
         elseif tonumber(ping) < 160 then
-            Getgenv().DaHoodSettings.Prediction = 0.36
+            getgenv().DaHoodSettings.Prediction = 0.36
         elseif tonumber(ping) < 170 then
-            Getgenv().DaHoodSettings.Prediction = 0.3825
+            getgenv().DaHoodSettings.Prediction = 0.3825
         elseif tonumber(ping) < 180 then
-            Getgenv().DaHoodSettings.Prediction = 0.405
+            getgenv().DaHoodSettings.Prediction = 0.405
         elseif tonumber(ping) < 190 then
-            Getgenv().DaHoodSettings.Prediction = 0.4275
+            getgenv().DaHoodSettings.Prediction = 0.4275
         elseif tonumber(ping) < 200 then
-            Getgenv().DaHoodSettings.Prediction = 0.45
+            getgenv().DaHoodSettings.Prediction = 0.45
         elseif tonumber(ping) < 210 then
-            Getgenv().DaHoodSettings.Prediction = 0.4725
+            getgenv().DaHoodSettings.Prediction = 0.4725
         elseif tonumber(ping) < 220 then
-            Getgenv().DaHoodSettings.Prediction = 0.495
+            getgenv().DaHoodSettings.Prediction = 0.495
         elseif tonumber(ping) < 230 then
-            Getgenv().DaHoodSettings.Prediction = 0.5175
+            getgenv().DaHoodSettings.Prediction = 0.5175
         elseif tonumber(ping) < 240 then
-            Getgenv().DaHoodSettings.Prediction = 0.54
+            getgenv().DaHoodSettings.Prediction = 0.54
         elseif tonumber(ping) < 250 then
-            Getgenv().DaHoodSettings.Prediction = 0.5625
+            getgenv().DaHoodSettings.Prediction = 0.5625
         end
     end
 end)
