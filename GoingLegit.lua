@@ -87,8 +87,6 @@ local GunSettings = {
 
 }
 
-getgenv().GunSettings = GunSettings
-
 
 function Aiming.Check()
 
